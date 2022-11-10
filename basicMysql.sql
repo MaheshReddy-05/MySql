@@ -86,4 +86,49 @@ CREATE TABLE IF NOT EXISTS student(
     FOREIGN KEY (Age) REFERENCES agetable(Age)
 );
 
--- Time 33 min Link https://www.youtube.com/watch?v=5YCeDPITsZA&list=PLrk5tgtnMN6RP0PMnyBVI15N_phCQevZM&index=13
+-- Insert Operations    --
+
+INSET INTO student(StudName,RollNo,Phone,Address)
+VALUES('Chintu','1','7395943197','100 Salampad Bodhan TS');
+
+-- Multiple Inserctions 
+INSET INTO student(StudName,RollNo,Phone,Address)
+VALUES ('Chitti','2','838233293','101 Nizamabad TS'),
+        ('Babbu','3','293928238','101 Nizamabad TS');
+
+-- Select Operations
+
+-- Select all Rows 
+SELECT *
+FROM student;
+
+-- Printing Only column Details
+SELECT Address 
+FROM student;
+
+-- Printing more Columns
+SELECT StudName,Address 
+FROM student; 
+
+-- Condition Based Selection
+SELECT *
+FROM student
+WHERE StudName = 'Chintu';
+
+-- UPDATE 
+
+-- Single Update
+UPDATE student
+SET Address = '101 Hyderabad TS'
+WHERE StudName = 'Chintu';
+
+-- Multiple Update
+UPDATE student
+SET Address = '101 Hyderabad TS',StudName='Surender'
+WHERE StudName = 'Chintu';
+
+-- DELETE 
+
+-- Delete a row based on codndition
+DELETE FROM student
+WHERE StudName = 'Chintu';
