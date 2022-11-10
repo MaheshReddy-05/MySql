@@ -28,6 +28,11 @@
 
 ## Aggregate Function 
 
+1. MIN - Returns the minimum value in the column
+2. MAX - Returns the maximum value in the column
+3. COUNT - Returns the number of rows that matches a specific condition
+4. AVG - Returns the average value of a column
+5. SUM - Returns the total sum of a column
 
 ### Doubt Topics:
 
