@@ -55,5 +55,3 @@
 ### Doubt Topics:
 
 1. DELETE Operations
-
-Video Link: https://youtu.be/5YCeDPITsZA?t=4763
