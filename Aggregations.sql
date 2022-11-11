@@ -59,4 +59,44 @@ WHERE NOT PhysicsMarks >30
 FROM marks
 WHERE NOT StudName = 'chitti' AND  (PhysicsMarks>70 OR Maths<40);
 
+-- IN Operation
+SELECT *
+FROM marks
+WHERE RollNo IN(101,102,109,120);
+-- WHERE RollNO  = 101 or RollNo = 102...
+
+-- NOT IN Operation
+SELECT *
+FROM marks
+WHERE RollNo NOT IN(101,102,109,120);
+-- WHERE NOT RollNO  = 101 or NOT RollNo = 102...
+
 -- ORDER BY -
+
+-- Ascending Order By default
+SELECT *
+FROM marks
+ORDER BY PhysicsMarks; -- ASAC
+
+-- Descending Order 
+SELECT *
+FROM marks
+ORDER BY PhysicsMarks DESC;
+
+-- ultiple Columns
+SELECT *
+FROM marks
+ORDER BY StudName, PhysicsMarks ;
+
+-- LIMIT 
+SELECT *
+FROM marks
+WHERE PhysicsMarks >0;
+ORDER BY PhysicsMarks DESC
+LIMIT 2; --I will print only 2 data rows
+
+-- GROUP BY
+
+SELECT City, COUNT(StudName) AS StudentCount
+FROM marks
+GROUP BY City;

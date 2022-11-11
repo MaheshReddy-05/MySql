@@ -25,6 +25,7 @@
 2. ALTER  - Used to Update the existing data
 3. DROP - Powerful keyword use to delete any existing Things
 4. SELECT - Based * or column name it will return all the Data
+5. LIMIT - To specify number of records
 
 ## Aggregate Function 
 
@@ -35,12 +36,22 @@
 5. SUM - Returns the total sum of a column
 
 ### Logical Operations
+
 1. AND - If both conditions are true 
 2. OR - If one condition is true 
 3. NOT - Opposite to given condition
+4. IN - Shorthand for multiple ORs
 
 ### Sorting 
+
 * ORDER BY - To sort the records 
+1. By default - Ascending order (ASAC)
+2. DESC - Descending Order
+
+### Grouping
+
+1. GROUP BY - Groups rows that have the same values into summary rows after used with aggregate functions
+
 ### Doubt Topics:
 
 1. DELETE Operations

@@ -24,6 +24,10 @@ MODIFY COLUMN RollNo varchar(20);
 ALTER TABLE student
 DROP COLUMN Location;
 
+-- Alter Table Rename Column Name
+ALTER TABLE student
+RENAME COLUMN Location to City;
+
 -- Drop Table 
 DROP TABLE student;
 
