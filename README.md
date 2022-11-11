@@ -34,6 +34,15 @@
 4. AVG - Returns the average value of a column
 5. SUM - Returns the total sum of a column
 
+### Logical Operations
+1. AND - If both conditions are true 
+2. OR - If one condition is true 
+3. NOT - Opposite to given condition
+
+### Sorting 
+* ORDER BY - To sort the records 
 ### Doubt Topics:
 
 1. DELETE Operations
+
+Video Link: https://youtu.be/5YCeDPITsZA?t=4763

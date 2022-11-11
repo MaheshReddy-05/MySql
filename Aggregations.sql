@@ -38,4 +38,25 @@ SELECT COUNT(StudName) AS Toppers
 FROM marks
 WHERE PhysicsMarks > 60 ;
 
--- And OR NOT Operations
+-- AND OR NOT Operations
+
+-- And Operation 
+SELECT *
+FROM marks
+WHERE PhysicsMarks >80 AND PhysicsMarks<95;
+
+-- OR Operation
+SELECT *
+FROM marks
+WHERE PhysicsMarks >80 OR StudName='Chitti';
+
+-- NOT Operation
+SELECT *
+FROM marks
+WHERE NOT PhysicsMarks >30 
+
+-- Mixed OperatioSELECT *
+FROM marks
+WHERE NOT StudName = 'chitti' AND  (PhysicsMarks>70 OR Maths<40);
+
+-- ORDER BY -
